@@ -1,7 +1,8 @@
+"use strict";
 // Opérations de recherche et édition sur une liste de personnes
-import { Personne } from './Personne.js';
-export class ListePersonnes {
-    _personnes;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ListePersonnes = void 0;
+class ListePersonnes {
     constructor(_personnes) {
         this._personnes = _personnes;
     }
@@ -31,3 +32,4 @@ export class ListePersonnes {
             .forEach(p => p.adresses.forEach((a) => a.ville = newVille));
     }
 }
+exports.ListePersonnes = ListePersonnes;

@@ -1,9 +1,8 @@
+"use strict";
 // Regroupe des stagiaires et expose quelques calculs utiles
-import { Stagiaire } from './Stagiaire.js';
-export class Formation {
-    _intitule;
-    _nbrJours;
-    _stagiaires;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Formation = void 0;
+class Formation {
     constructor(_intitule, _nbrJours, _stagiaires) {
         this._intitule = _intitule;
         this._nbrJours = _nbrJours;
@@ -57,3 +56,4 @@ export class Formation {
         return st ? st.calculerMoyenne() : null;
     }
 }
+exports.Formation = Formation;

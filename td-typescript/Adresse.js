@@ -1,8 +1,8 @@
+"use strict";
 // Adresse postale simple
-export class Adresse {
-    _rue;
-    _ville;
-    _codePostal;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Adresse = void 0;
+class Adresse {
     constructor(_rue, _ville, _codePostal) {
         this._rue = _rue;
         this._ville = _ville;
@@ -15,3 +15,4 @@ export class Adresse {
     get codePostal() { return this._codePostal; }
     set codePostal(v) { this._codePostal = v; }
 }
+exports.Adresse = Adresse;

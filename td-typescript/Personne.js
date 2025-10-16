@@ -1,9 +1,8 @@
+"use strict";
 // Personne avec un nom, un sexe et des adresses
-import { Adresse } from './Adresse.js';
-export class Personne {
-    _nom;
-    _sexe;
-    _adresses;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Personne = void 0;
+class Personne {
     constructor(_nom, _sexe, _adresses) {
         this._nom = _nom;
         this._sexe = _sexe;
@@ -18,3 +17,4 @@ export class Personne {
     get adresses() { return this._adresses; }
     set adresses(v) { this._adresses = v; }
 }
+exports.Personne = Personne;

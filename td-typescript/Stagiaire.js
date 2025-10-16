@@ -1,7 +1,8 @@
+"use strict";
 // Élève avec un nom et une liste de notes
-export class Stagiaire {
-    _nom;
-    _notes;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Stagiaire = void 0;
+class Stagiaire {
     constructor(_nom, _notes) {
         this._nom = _nom;
         this._notes = _notes;
@@ -26,3 +27,4 @@ export class Stagiaire {
         return this._notes.length ? Math.min(...this._notes) : null;
     }
 }
+exports.Stagiaire = Stagiaire;

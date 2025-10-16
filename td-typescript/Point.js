@@ -1,7 +1,8 @@
+"use strict";
 // Représente un point en 2D
-export class Point {
-    _abs;
-    _ord;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Point = void 0;
+class Point {
     // Coordonnées internes
     constructor(_abs, _ord) {
         this._abs = _abs;
@@ -34,3 +35,4 @@ export class Point {
         return `(${this._abs}, ${this._ord})`;
     }
 }
+exports.Point = Point;
